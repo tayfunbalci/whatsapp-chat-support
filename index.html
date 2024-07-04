@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp Button</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wa" class="wa__widget">
+        <div class="wa__popup">
+            <div class="wa__popup_header">
+                <div class="wa__popup__close-btn wa__shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+                </div>
+                <div class="wa__clearfix"></div>
+            </div>
+            <div class="wa__popup_body">
+                <div class="wa__popup_support_wrapper">
+                    <div class="wa__popup_support wa__shadow">
+                        <div class="wa__popup_support_about">
+                            <div class="wa__popup_support_img_wrapper">
+                                <img class="wa__popup_support_img" src="https://demo.wecreativez.com/codecanyon/wws/wp-content/plugins/wordpress-whatsapp-support/assets/img/user.svg" alt="WeCreativez WhatsApp Support" width="50" height="50">
+                            </div>
+						    Our customer support team is here to answer your questions. Ask us anything!					
+                        </div>
+                        <div class="wa__popup__support_welcome">
+                            <img draggable="false" role="img" class="emoji" alt="👋" src="https://s.w.org/images/core/emoji/15.0.3/svg/1f44b.svg">
+                             Hi, how can I help?					
+                        </div>
+                    </div>
+                </div>
+                <div class="wa__popup_input_wrapper wa__shadow">
+                    <input type="text" class="wa__popup_input" placeholder="Reply to WeCreativez..." autocomplete="off">
+                    <svg class="wa__popup_send_btn" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+					<style type="text/css">
+						.wws-lau00001{fill:#0dc15280;}
+						.wws-lau00002{fill:#0dc152;}
+					</style>
+					<path id="path0_fill" class="wws-lau00001" d="M38.9,19.8H7.5L2,39L38.9,19.8z"></path>
+					<path id="path0_fill_1_" class="wws-lau00002" d="M38.9,19.8H7.5L2,0.7L38.9,19.8z"></path>
+				</svg>
+                </div>
+                <div class="wa__clearfix"></div>
+            </div>
+        </div>
+        <div class="wa__btn_popup wa__active">
+            <div class="wa__btn_popup_icon" style="background: rgb(45, 183, 66);"></div>
+        </div>
+    </div>
+
+    <script src="https://aironev.com/js/jquery-1.9.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var btn = document.querySelector('.wa__btn_popup');
+            btn.addEventListener('click',function(){
+                btn.classList.contains("wa__active") ? btn.classList.remove("wa__active") : btn.classList.add("wa__active");
+            })
+        })
+    </script>
+</body>
+</html>
