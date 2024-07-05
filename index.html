@@ -9,12 +9,12 @@
 <body>
     <div id="wa" class="wa__widget">
         <div class="wa__popup">
-            <div class="wa__popup_header">
+            <!--<div class="wa__popup_header">
                 <div class="wa__popup__close-btn wa__shadow">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
                 </div>
                 <div class="wa__clearfix"></div>
-            </div>
+            </div>-->
             <div class="wa__popup_body">
                 <div class="wa__popup_support_wrapper">
                     <div class="wa__popup_support wa__shadow">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="wa__popup_input_wrapper wa__shadow">
-                    <input type="text" class="wa__popup_input" placeholder="Reply to WeCreativez..." autocomplete="off">
+                    <input type="text" class="wa__popup_input" id="messageInput" placeholder="Reply to WeCreativez..." autocomplete="off">
                     <svg class="wa__popup_send_btn" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
 					<style type="text/css">
 						.wws-lau00001{fill:#0dc15280;}
@@ -44,19 +44,12 @@
                 <div class="wa__clearfix"></div>
             </div>
         </div>
-        <div class="wa__btn_popup wa__active">
+        <div class="wa__btn_popup">
             <div class="wa__btn_popup_icon" style="background: rgb(45, 183, 66);"></div>
         </div>
     </div>
 
     <script src="https://aironev.com/js/jquery-1.9.1.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            var btn = document.querySelector('.wa__btn_popup');
-            btn.addEventListener('click',function(){
-                btn.classList.contains("wa__active") ? btn.classList.remove("wa__active") : btn.classList.add("wa__active");
-            })
-        })
-    </script>
+    <script src="wa_widget.js"></script>
 </body>
 </html>

@@ -78,12 +78,12 @@
 }
 
 .wa__popup{
-    display: block;
+    display: none;
     font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     line-height: 1.618;
     text-rendering: optimizeLegibility;
     font-weight: 400;
-    margin-bottom: 86px;
+    margin-bottom: 80px;
     width: 260px;
 }
 
