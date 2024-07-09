@@ -5,6 +5,12 @@
         if (btn.classList.contains("wa__active")) {
             btn.classList.remove("wa__active");
             $('.wa__popup').fadeOut("slow");
+            window.zoom = 1;
+            document.body.style.zoom = 1;
+            var scale = 'scale(1)';
+            document.body.style.webkitTransform = scale;
+            document.body.style.msTransform = scale;
+            document.body.style.transform = scale;
         } else {
             btn.classList.add("wa__active");
             $('.wa__popup').fadeIn("slow");
@@ -25,6 +31,9 @@
     const whatsappLink = document.querySelector(".wa__popup_send_btn");
     whatsappLink.addEventListener("click", function (event) {
         event.preventDefault(); // Varsayılan bağlantı davranışını önleyin
+        messageInput.value = "";
+        btn.classList.remove("wa__active");
+        $('.wa__popup').fadeOut("slow");
         window.open(whatsappUrl, "_blank"); // WhatsApp bağlantısını yeni bir sekmede açın
     });
 

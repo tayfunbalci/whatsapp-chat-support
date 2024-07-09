@@ -213,6 +213,7 @@ img.emoji {
     user-select: none;
     overflow: hidden;
     box-sizing: border-box;
+    margin: 0 !important;
 }
 .wa__popup_send_btn:active {
     background-color: #eceff1;
@@ -225,4 +226,8 @@ img.emoji {
 
 .wa__shadow{
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.wa__background{
+    background-color: rgb(45, 183, 66);
 }
